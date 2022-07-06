@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(168, 253, 253);
+    font: bold 1.2em arial, sans-serif;
+}
+h1 {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border: 5px solid;
+    padding: 10px;
+    margin: 20px auto;
+}
+a {
+    color: darkblue;
+}
+a:hover{
+    color: blue;
+}
+a:active {
+    color: red;
+}

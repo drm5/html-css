@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            background-color: rgb(141, 228, 243);
+        }
+    </style>
+</head>
+<body>
+    <h1>imagens dinâmicas</h1>
+    <h2>Abra em diversos dispositivos ou aumente e diminua a tela.</h2>
+    
+    <a href="https://www.youtube.com/watch?v=pkcJEvMcnEg&list=RDpkcJEvMcnEg&start_radio=1" target="_blank" rel="external"><em>Nirvana, Lithium</em></a>
+    
+    <p>
+        <a href="pag2.html" rel="next" target="_self">site 2</a>
+        </p>
+        <picture>
+    
+        <source media="(max-width: 750px)" srcset="Imagens/300.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="Imagens/700.jpg" type="image/jpg">
+        <img src="Imagens/1000.jpg" alt="imagem flexível">
+    </picture> <!--Está jpg pelo fato de a imagem ser jpg, e não png.-->
+
+    <h2>Àudio</h2>
+    <p>learning</p>
+
+<audio preload="metadata" autoplay controls loop>
+    <source src="midia/Cattle.mp3" type="audio/mpeg">
+    <source src="midia/Cattle.ogg" type="audio/ogg">
+    <source src="midia/Cattle.wav" type="audio/wav">
+    <p>Infelizmente seu navegador não consegue reproduzir o áudio. 
+        <a href="midia/Cattle.mp3">Clique aqui para fazer o downoad do arquivo</a>
+    </p>
+</audio>
+
+</body>
+</html>

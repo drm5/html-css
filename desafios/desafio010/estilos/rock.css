@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Rock';
+    src: url('../fontes/Road_Rage.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #f1e1e1;
+    --cor1: #6e6e6e;
+    --cor2: #f73939;
+    --cor3: #8a2323;
+    --cor4: #453333;
+    --cor5: #000000;
+
+    --font-rock: 'Rock', cursive;
+    --font-bebas: 'Bebas Neue', sans-serif;
+    --font-gotic: 'New Rocker', serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor1);    
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
+    text-align: center;
+    min-height: 100px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+}
+
+header > h1 {
+    font-family: var(--font-rock);
+    font-size: 3em;
+    color: white;
+    padding: 10px;
+    text-shadow: 2px 2px 4px black;
+}
+
+header > p {
+    font: normal 1.2em arial, sans-serif;
+    color: #461212;
+    padding-bottom: 10px
+}
+
+nav {
+    background-color: rgb(0, 0, 0);
+    padding: 3px;
+}
+
+a {
+    color: white;
+    font: bold 1em arial, sans-serif;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    min-width: 100px;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+}
+
+a#nirvana {
+    background-color: rgb(255, 225, 55);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a#nirvana:hover {
+    background-color: rgb(240, 233, 158);
+    color: black;
+    text-shadow: none;
+}
+
+a#acdc{
+    background-color: rgb(209, 47, 47);
+}
+
+a#acdc:hover {
+    background-color: rgb(255, 148, 148);
+    color: black;
+    text-shadow: none;
+}
+
+a#gnr {
+    background-color: rgb(255, 94, 0);
+}
+
+a#gnr:hover {
+    background-color: rgb(252, 158, 96);
+    color: black;
+    text-shadow: none;
+}
+
+strong {
+    color: #461212;
+    font-weight: 900;
+}
+
+main {
+    background-color: white;
+    max-width: 850px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+}
+
+h2#first {
+    background-image: linear-gradient(to right, black, transparent 80%);
+    color: rgb(248, 248, 38);
+    font: 2em var(--font-bebas);
+    text-indent: 20px;
+    margin-top: 20px;
+}
+
+main p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-indent: 30px;
+}
+
+h2#second {
+    background-image: linear-gradient(to right, black, transparent 80%);
+    color: red;
+    font: bold 2em var(--font-gotic);
+    text-indent: 20px;
+    margin-bottom: 20px;
+}
+
+h2#third {
+    background-image: linear-gradient(to right, black, transparent 80%);
+    color: rgb(255, 97, 39);
+    font: bold 2em serif;
+    text-indent: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+main p {
+    font: bolder 1em arial, sans-serif;
+}

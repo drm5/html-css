@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(236, 224, 157);
+}
+h1 {
+    background-color: aliceblue;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    background-color: rgb(167, 165, 165);
+    border-radius: 10px;
+    width: 700px;
+    padding: 10px;
+    box-shadow: 5px 5px 15px rgba(104, 104, 104, 0.705);
+}
+.rock {
+    background-color: rgb(161, 108, 108);
+    color: aliceblue;
+    height: 200px;
+    width: 200px;
+    border: 2.5px solid black;
+    text-align: center;
+    display: inline-block;
+    font: bold 1.4em arial, sans-serif;
+}
+div:hover {
+    background-color: red;
+}
+div > p {
+    display: none;
+}
+div:hover > p {
+    display: block;
+}
+div:hover {
+    color: black;
+}
