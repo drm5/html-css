@@ -2,30 +2,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    background-color: darkgray;
+    min-height: 100vh;
+}
+
 header {
     background-color: black;
     color: white;
     text-align: center;
-    min-height: 220px;
+    padding: 50px;
 }
 
-h1 {
-    margin: 0px;
-    padding-top: 50px;
-    font: bold 5em 'Passion One', sans-serif;
+header > h1 {
+    font-variant: small-caps;
 }
 
-p {
-    font-family: Sriracha;
-}
-
-p#cabeçalho {
+a {
     color: white;
-    font: normal 1em arial, sans-serif;
-    padding-top: 10px;
+    text-decoration: none;
+    font-weight: bold; 
 }
 
-body {
-    margin: 0px;
-    padding: 0px;
+a:hover {
+    text-decoration: underline;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+     line-height: 2em;
+     padding-left: 30px;
+}
+
+section.image {
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+
+section.image p {
+    background-color: rgb(49, 49, 49);
+    padding: 10px;
+    width: 400px;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
