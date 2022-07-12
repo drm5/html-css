@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+:root {
+    --font-padrão: Arial, sans-serif;
+}
+
+body {
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: black;
+    color: white;
+}
+
+header h1 {
+    margin: 0px;
+    text-align: center;
+    padding: 40px;
+    font: bold 3em var(--font-padrão);
+}
+
+main {
+    background-color: white;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px; 
+}
+
+table {
+    border-collapse: collapse;
+    width: 300px;
+    margin: auto;
+    position: relative;
+}
+
+caption {
+    font: normal 1.2em arial,sans-serif;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+thead > tr > th {
+    position: sticky;
+    top: -1px;
+    background-color: rgb(99, 99, 99);
+}
+
+tbody > tr:nth-child(2n) {
+    background-color: rgb(211, 209, 209);
+}
+
+thead, tfoot {
+    background-color: rgb(99, 99, 99);
+    color: white;
+}
+
+.num {
+    text-align: right;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.5em;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 7px;
+}
+
+footer p {
+    margin: 0px;
+}
