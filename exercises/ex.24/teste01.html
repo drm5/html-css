@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock N' Roll</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Rock';
+    src: url('../fontes/Road_Rage.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #f1e1e1;
+    --cor1: #6e6e6e;
+    --cor2: #f73939;
+    --cor3: #8a2323;
+    --cor4: #453333;
+    --cor5: #000000;
+
+    --font-rock: 'Rock', cursive;
+    --font-bebas: 'Bebas Neue', sans-serif;
+    --font-gotic: 'New Rocker', serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor1);    
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor3));
+    text-align: center;
+    min-height: 100px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+}
+
+header > h1 {
+    font-family: var(--font-rock);
+    font-size: 3em;
+    color: white;
+    padding: 10px;
+    text-shadow: 2px 2px 4px black;
+}
+
+header > p {
+    font: normal 1.2em arial, sans-serif;
+    color: #461212;
+    padding-bottom: 10px
+}
+
+nav {
+    background-color: rgb(0, 0, 0);
+    padding: 3px;
+}
+
+a {
+    color: white;
+    font: bold 1em arial, sans-serif;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    min-width: 100px;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+}
+
+a#nirvana {
+    background-color: rgb(255, 225, 55);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a#nirvana:hover {
+    background-color: rgb(240, 233, 158);
+    color: black;
+    text-shadow: none;
+}
+
+a#acdc{
+    background-color: rgb(209, 47, 47);
+}
+
+a#acdc:hover {
+    background-color: rgb(255, 148, 148);
+    color: black;
+    text-shadow: none;
+}
+
+a#gnr {
+    background-color: rgb(255, 94, 0);
+}
+
+a#gnr:hover {
+    background-color: rgb(252, 158, 96);
+    color: black;
+    text-shadow: none;
+}
+
+strong {
+    color: #461212;
+    font-weight: 900;
+}
+
+main {
+    background-color: white;
+    max-width: 850px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.425);
+}
+
+h2#first {
+    background-image: linear-gradient(to right, black, transparent 80%);
+    color: rgb(248, 248, 38);
+    font: 2em var(--font-bebas);
+    text-indent: 20px;
+    margin-top: 20px;
+}
+
+main p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-indent: 30px;
+}
+
+h2#second {
+    background-image: linear-gradient(to right, black, transparent 80%);
+    color: red;
+    font: bold 2em var(--font-gotic);
+    text-indent: 20px;
+    margin-bottom: 20px;
+}
+
+h2#third {
+    background-image: linear-gradient(to right, black, transparent 80%);
+    color: rgb(255, 97, 39);
+    font: bold 2em serif;
+    text-indent: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+main p {
+    font: bolder 1em arial, sans-serif;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rock N' Roll</h1>
+    </header>
+
+    <nav>
+        <a href="https://www.youtube.com/channel/UCFMZHIQMgBXTSxsr86Caazw" rel="external" target="_blank" id="nirvana">nirvana</a>
+        <a href="https://www.youtube.com/channel/UCB0JSO6d5ysH2Mmqz5I9rIw" rel="external" target="_blank" id="acdc">AC/DC</a>
+        <a href="https://www.youtube.com/channel/UCIak6JLVOjqhStxrL1Lcytw" rel="external" target="_blank" id="gnr">Guns N' Roses</a>
+    </nav>
+
+    <main>
+        <h1></h1>
+        
+        <h2 id="first">Nirvana</h2>
+        
+        <p>Nirvana é uma banda dos anos 90, formada pelo vocalista e guitarrista e compositor <strong>Kurt Cobain</strong>, seu estilo não é alternative rock como muitos imaginam e sim grunge.</p>
+
+        <p>Load up on guns, bring your friends
+            It's fun to lose and to pretend
+            She's over bored and self assured
+            Oh no, I know a dirty word</p>
+
+        <p>
+            Hello, hello, hello, how low
+            Hello, hello, hello, how low
+            Hello, hello, hello, how low
+            Hello, hello, hello
+        </p>
+
+        <h2 id="second">AC/DC</h2>
+
+        <p>
+            Thunder, thunder, thunder, thunder
+            Thunder, thunder, thunder, thunder
+            Thunder, thunder
+        </p>
+        
+        <p>
+            I was caught
+            In the middle of a railroad track (thunder)
+            I looked 'round
+            And I knew there was no turning back (thunder)
+            My mind raced
+            And I thought, what could I do? (Thunder)
+            And I knew
+            There was no help, no help from you (thunder)
+            Sound of the drums
+            Beating in my heart
+            The thunder of guns
+            Tore me apart
+            You've been
+            Thunderstruck 
+        </p>
+
+        <p>I was caught
+            In the middle of a railroad track (thunder)
+            I looked 'round
+            And I knew there was no turning back (thunder)
+            My mind raced
+            And I thought, what could I do? (Thunder)
+            And I knew
+            There was no help, no help from you (thunder)
+            Sound of the drums
+            Beating in my heart
+            The thunder of guns
+            Tore me apart
+            You've been
+            Thunderstruck</p>
+
+        <h2 id="third">Guns N' Roses</h2>
+
+        <p>
+            Oh my god
+            Jump
+            Welcome to the jungle, we've got fun and games
+            We got everything you want honey, we know the names
+            We are the people that can find whatever you may need
+            If you got the money, honey, we got your disease
+        </p>
+
+        <p>
+            In the jungle, welcome to the jungle
+            Watch it bring you to your sha-n-n-n-n-n-n-n-n knees, knees
+            Mwah, I, I wanna watch you bleed
+        </p>
+
+        <p>
+            Welcome to the jungle, we take it day by day
+            If you want it you're gonna bleed but it's the price to pay
+            And you're a very sexy girl who's very hard to please
+            You can taste the bright lights but you won't get there for free
+            In the jungle, welcome to the jungle
+            Feel my, my, my, my serpentine
+            Ooh, ah, I want to hear you scream
+        </p>
+
+    </main>
+    
+    <footer>
+        <p></p>
+    </footer>
+</body>
+</html>
