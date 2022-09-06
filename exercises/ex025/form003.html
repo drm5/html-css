@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Form3</title>
+</head>
+<body onload="data()">
+    <header>
+        <h1>Formulário</h1>
+    </header>
+    <main>
+        <h2>Insira seus dados abaixo!</h2>
+        <form action="cadastro.php" autocomplete="on" method="get">
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" placeholder="ex. Kurt Cobain" required maxlength="30" autocomplete="name">
+            </p>
+            <p>
+                <label for="imateria">Matéria: </label>
+                <input type="text" name="materia" id="imateria" required maxlength="20" placeholder="ex. História">
+            </p>
+            <p>
+                <label for="idia">Dia da prova:</label>
+                <input type="date" name="dia" id="idia" required>
+            </p>
+            <p>
+                <label for="ihora">Hora:</label>
+                <input type="time" id="ihora">
+            </p>
+            <p>
+                <label for="imedia">Média</label>
+                <input type="number" name="media" id="imedia" required min="0" max="10" step="0.5">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="limpar">
+            </p>
+        </form>
+        <div id="res"></div>
+    </main>
+    <footer>
+        <p>Developed by <a href="#">Douglas</a></p>
+    </footer>
+
+    <script>
+        function data() {
+            var r = document.getElementById('res')
+            var data = document.getElementById('idia')
+            var hoje = new Date()
+            var hj = hoje.getDate()
+            var month = hoje.getMonth()
+            var year = hoje.getFullYear()
+            var mes = `${month+1}`
+            if (hj <= 9) {
+                hj = `0${hj}`
+            }
+            if (mes <= 9) {
+                mes = `0${mes}`
+            }
+            r.innerHTML = `Hoje é ${hj}/${mes}/${year}`
+            data.innerHTML = `${hj}/${month}/${year}`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulary</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-color: rgb(17, 67, 124);
+            color: white;
+        }
+        h1 {
+            text-align: center;
+        }
+        img {
+            width: 300px;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>My First Formulary</h1>
+
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <img src="nirvana-face.jpg" alt="">
+</body>
+</html>
