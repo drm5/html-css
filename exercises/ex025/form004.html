@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style3.css">
+    <title>form4</title>
+</head>
+<body>
+    <header>
+        <h1>Formulary</h1>
+    </header>
+    <main>
+        <h2>Insira seus dados abaixo!</h2>
+        <form action="cadastro.php" autocomplete="on" method="get">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <div>
+                    <label for="iname">Nome:</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="iemail" placeholder="ex. slash123@gmail.com" name="email" id="iemail" required autocomplete="email">
+                </div>
+                <div>
+                    <label for="itel">Telefone:</label>
+                    <input type="tel" required autocomplete="tel" placeholder="ex. 12 9876-5432" pattern="^d{4-5}-\d{4}$" name="tel" id="itel">
+                </div>
+            </fieldset>
+            <!--Estudar RegEx-->
+            <div id="fim">
+                <input type="submit" value="enviar">
+                <input type="reset" value="limpar">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Developed by Douglas</p>
+    </footer>
+</body>
+</html>

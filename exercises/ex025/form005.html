@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style3.css">
+    <title>Form5</title>
+</head>
+<body>
+    <header>
+        <h1>Formulary</h1>
+    </header>
+    <main>
+        <form action="cadastro.php" autocomplete="on" method="get">
+            <h2>Rock N' Roll</h2>
+            <fieldset>
+                <legend>Bandas de Rock favoritas</legend>
+                <input type="checkbox" name="guns" id="guns">
+                <label for="guns">Guns N' Roses</label><br>
+
+                <input type="checkbox" name="kiss" id="kiss">
+                <label for="kiss">KISS</label><br>
+
+                <input type="checkbox" name="nirvana" id="nirvana">
+                <label for="nirvana">Nirvana</label><br>
+                
+                <input type="checkbox" name="acdc" id="acdc">
+                <label for="acdc">AC/DC</label>
+            </fieldset>
+            <fieldset>
+                <legend>Música favorita do GNR</legend>
+                <input type="radio" name="gnr" id="paradise" checked>
+                <label for="paradise">Paradise City</label><br>
+
+                <input type="radio" name="gnr" id="sweet">
+                <label for="sweet">Sweet Child O' Mine</label><br>
+
+                <input type="radio" name="gnr" id="jungle">
+                <label for="jungle">Welcome to the Jungle</label><br>
+
+                <input type="radio" name="gnr" id="queen">
+                <label for="queen">Rocket Queen</label>
+            </fieldset>
+            <fieldset>
+                <legend>Gênero</legend>
+                <input type="radio" name="s" id="f">
+                <label for="">Feminino</label><br>
+
+                <input type="radio" name="s" id="m">
+                <label for="m">Masculino</label>
+            </fieldset>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="limpar">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Developed by Douglas</p>
+    </footer>
+</body>
+</html>
